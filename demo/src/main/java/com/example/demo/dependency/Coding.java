@@ -19,10 +19,10 @@ public class Coding {
     // 필드주입은 순환참조(무한루프)시 오류가 발생하지 않아서 StackOverFlow가 발생할 수 있다.
     // 필드주입은 객체가 생성된 이후에 초기화가 되기때문에 final키워드를 사용할 수 없다.(다른곳에서 변형가능)
 
-    /* @Autowired
-    private Computer computer; */
+    //@Autowired
+    //private Computer computer;
 
-    
+
     // 2.생성자주입---------------------------------------------
     // 외부에서 받아오는거라서 Autowired없어도 관리한다.(생략가능)
     // final키워드 사용가능, 의존성 주입이 되지 않으면 객체가 생성되지 않음으로 NPE방어
