@@ -1,256 +1,21 @@
-!SESSION 2023-10-09 22:20:17.678 -----------------------------------------------
-eclipse.buildId=unknown
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -eclipse.keyring C:\Users\82109\AppData\Roaming\DBeaverData\secure\secure_storage
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\SpringBoot_dds\workspace
-
-!ENTRY org.eclipse.ui 2 2 2023-10-09 22:20:21.746
-!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-09 22:32:54.313
-!MESSAGE ORA-01017: invalid username/password; logon denied
-
-!STACK 0
-java.sql.SQLException: ORA-01017: invalid username/password; logon denied
-
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
-	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:573)
-	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:431)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
-	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:366)
-	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:752)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:366)
-	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:536)
-	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:228)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$1(JDBCDataSource.java:237)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.lambda$0(JDBCDataSource.java:250)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:269)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.openConnection(OracleDataSource.java:176)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:103)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:123)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:107)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:98)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.<init>(OracleDataSource.java:94)
-	at org.jkiss.dbeaver.ext.oracle.OracleDataSourceProvider.openDataSource(OracleDataSourceProvider.java:143)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1278)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1117)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:950)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:77)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectionTestJob.run(ConnectionTestJob.java:103)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-09 22:33:45.739
-!MESSAGE Error reading statistics of 'localhost'
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-09 22:33:45.739
-!MESSAGE Can't read tablespace statistics
-!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2023-10-09 22:33:45.739
-!MESSAGE ORA-00942: table or view does not exist
-
-!STACK 0
-java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
-
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
-	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:837)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
-	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:523)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:193)
-	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:848)
-	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1153)
-	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1275)
-	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1477)
-	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeQuery(JDBCStatementImpl.java:346)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.collectObjectStatistics(OracleDataSource.java:842)
-	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:337)
-	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:1)
-	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:88)
-	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:72)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SESSION 2023-10-10 13:39:05.085 -----------------------------------------------
-eclipse.buildId=unknown
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -eclipse.keyring C:\Users\82109\AppData\Roaming\DBeaverData\secure\secure_storage
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY org.eclipse.core.resources 2 10035 2023-10-10 13:39:06.432
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY org.eclipse.core.resources 4 567 2023-10-10 13:39:06.465
-!MESSAGE Workspace restored, but some problems occurred.
-!SUBENTRY 1 org.eclipse.core.resources 4 567 2023-10-10 13:39:06.465
-!MESSAGE Could not read metadata for 'General'.
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException(/General)[567]: java.lang.Exception: The project description file (.project) for 'General' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
-	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
-	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
-	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
-	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
-	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1587)
-	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2549)
-	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2254)
-	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
-	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
-	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
-	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
-	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
-	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
-	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
-	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
-	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
-	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
-	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
-	at org.eclipse.osgi.container.Module.start(Module.java:468)
-	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
-	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
-	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
-	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.jkiss.dbeaver.core.DesktopPlatform.initialize(DesktopPlatform.java:175)
-	at org.jkiss.dbeaver.core.DesktopPlatform.createInstance(DesktopPlatform.java:116)
-	at org.jkiss.dbeaver.core.DesktopPlatform.getInstance(DesktopPlatform.java:96)
-	at org.jkiss.dbeaver.core.DesktopAdapterFactory.getAdapter(DesktopAdapterFactory.java:33)
-	at org.eclipse.core.internal.runtime.AdapterManager.lambda$13(AdapterManager.java:302)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:304)
-	at org.eclipse.core.internal.runtime.AdapterManager.loadAdapter(AdapterManager.java:328)
-	at org.jkiss.dbeaver.utils.GeneralUtils.queryAdapterManager(GeneralUtils.java:793)
-	at org.jkiss.dbeaver.utils.GeneralUtils.adapt(GeneralUtils.java:768)
-	at org.jkiss.dbeaver.utils.GeneralUtils.adapt(GeneralUtils.java:783)
-	at org.jkiss.dbeaver.runtime.DBWorkbench.getPlatform(DBWorkbench.java:46)
-	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:247)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-!SUBENTRY 2 org.eclipse.core.resources 4 567 2023-10-10 13:39:06.466
-!MESSAGE The project description file (.project) for 'General' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!STACK 0
-java.lang.Exception: The project description file (.project) for 'General' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
-	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
-	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
-	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
-	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
-	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1587)
-	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2549)
-	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2254)
-	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
-	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
-	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
-	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
-	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
-	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
-	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
-	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
-	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
-	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
-	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
-	at org.eclipse.osgi.container.Module.start(Module.java:468)
-	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
-	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
-	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
-	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.jkiss.dbeaver.core.DesktopPlatform.initialize(DesktopPlatform.java:175)
-	at org.jkiss.dbeaver.core.DesktopPlatform.createInstance(DesktopPlatform.java:116)
-	at org.jkiss.dbeaver.core.DesktopPlatform.getInstance(DesktopPlatform.java:96)
-	at org.jkiss.dbeaver.core.DesktopAdapterFactory.getAdapter(DesktopAdapterFactory.java:33)
-	at org.eclipse.core.internal.runtime.AdapterManager.lambda$13(AdapterManager.java:302)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.eclipse.core.internal.runtime.AdapterManager.getAdapter(AdapterManager.java:304)
-	at org.eclipse.core.internal.runtime.AdapterManager.loadAdapter(AdapterManager.java:328)
-	at org.jkiss.dbeaver.utils.GeneralUtils.queryAdapterManager(GeneralUtils.java:793)
-	at org.jkiss.dbeaver.utils.GeneralUtils.adapt(GeneralUtils.java:768)
-	at org.jkiss.dbeaver.utils.GeneralUtils.adapt(GeneralUtils.java:783)
-	at org.jkiss.dbeaver.runtime.DBWorkbench.getPlatform(DBWorkbench.java:46)
-	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:247)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:06.642
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:06.642
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:06.183 - DBeaver 23.2.0.202309041200 is starting
+2023-10-10 13:39:06.184 - OS: Windows 11 10.0 (amd64)
+2023-10-10 13:39:06.184 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2023-10-10 13:39:06.184 - Install path: 'C:\SpringBoot_dds\resource\dbeaver'
+2023-10-10 13:39:06.184 - Instance path: 'file:/C:/SpringBoot_dds/workspace/'
+2023-10-10 13:39:06.184 - Memory available 64Mb/1024Mb
+2023-10-10 13:39:06.193 - Create display
+2023-10-10 13:39:06.269 - Initializing DBeaver 23.2.0
+2023-10-10 13:39:06.270 - Host plugin: org.jkiss.dbeaver.ui.app.standalone 23.2.0.202309041200
+2023-10-10 13:39:06.279 - Initialize desktop platform...
+2023-10-10 13:39:06.378 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.10.0.v20230425-0513]
+> Start Core Resource Management [org.eclipse.core.resources 3.19.0.v20230510-1240]
+> Start ÆÀ Áö¿ø ÇÙ½É [org.eclipse.team.core 3.10.0.v20230317-0901]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.113.202309041200]
+2023-10-10 13:39:06.637 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:06.639 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -295,19 +60,56 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:06.889
-!MESSAGE Error accessing instance server: java.net.ConnectException
-
-!ENTRY org.eclipse.ui 2 2 2023-10-10 13:39:09.884
-!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.148
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.148
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:06.659 - Initialize base platform...
+2023-10-10 13:39:06.675 - Platform initialized (396ms)
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.113.202309041200]
+Warning: NLS unused message: InputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+Warning: NLS unused message: OutputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+> Start µğ¹ö±× ÇÙ½É [org.eclipse.debug.core 3.21.0.v20230508-1538]
+> Start jna [com.sun.jna 5.13.0]
+> Start ÀÎÅÍ³İ ¿¬°á °ü¸® »ç¿ëÀÚ ÀÎÅÍÆäÀÌ½º [org.eclipse.ui.net 1.5.0.v20230317-0901]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.0.v20230317-0901]
+REQUEST: {"payload":1696912746832}
+> Start JSch ÇÙ½É [org.eclipse.jsch.core 1.5.0.v20230317-0901]
+2023-10-10 13:39:06.888 - Error accessing instance server: java.net.ConnectException
+2023-10-10 13:39:06.900 - Starting instance server at http://localhost:50565
+2023-10-10 13:39:06.909 - Run workbench
+> Start DBeaver UI [org.jkiss.dbeaver.ui 5.1.128.202309041200]
+> Start Eclipse e4 ÀÛ¾÷¿µ¿ª SWT [org.eclipse.e4.ui.workbench.swt 0.17.0.v20230501-1823]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.0.v20230429-1914]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.0.v20230501-1823]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.0.v20230501-1823]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.0.v20230501-1823]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.0.v20230501-1823]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.18.0.v20230211-1150]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.0.v20230501-1533]
+> Start Eclipse e4 ÀÛ¾÷¿µ¿ª ±â´É Ãß°¡ [org.eclipse.e4.ui.workbench.addons.swt 1.5.0.v20230501-1823]
+> Start Eclipse e4 ÀÛ¾÷¿µ¿ª SWT ·»´õ·¯ [org.eclipse.e4.ui.workbench.renderers.swt 0.16.0.v20230525-0648]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.0.v20230429-1914]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.0.v20230317-0802]
+Warning: NLS unused message: BlockedJobsDialog_UserInterfaceTreeElement in: org.eclipse.ui.internal.progress.messages
+2023-10-10 13:39:08.197 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.103.202309041200]
+2023-10-10 13:39:08.303 - Total database drivers: 106 (106)
+> Start µµ¿ò¸» ½Ã½ºÅÛ ÄÚ¾î [org.eclipse.help 3.10.0.v20230317-0802]
+2023-10-10 13:39:08.380 - Create actions
+2023-10-10 13:39:08.385 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2023-10-10 13:39:08.385 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2023-10-10 13:39:08.386 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2023-10-10 13:39:08.699 - Initialize workbench window
+2023-10-10 13:39:08.705 - Finish initialization
+> Start ±âº» ¹®¼­ ÆíÁı±â [org.eclipse.ui.editors 3.16.0.v20230329-1609]
+> Start ÅØ½ºÆ® ÆíÁı±â ÇÁ·¹ÀÓ¿öÅ© [org.eclipse.ui.workbench.texteditor 3.17.0.v20230316-1200]
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.113.202309041200]
+Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.113.202309041200]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.89.202309041200]
+> Start ÇÙ½É ºñ±³ Áö¿ø [org.eclipse.compare.core 3.8.0.v20230517-1315]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.150.202309041200]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.119.202309041200]
+2023-10-10 13:39:10.145 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.145 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -374,13 +176,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.153
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.153
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.151 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.151 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -447,13 +245,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.165
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.165
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.163 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.163 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -520,13 +314,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.170
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.170
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.168 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.168 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -593,13 +383,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.187
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.187
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.184 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.185 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -669,13 +455,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.193
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.193
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.190 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.190 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -745,13 +527,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.199
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.199
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.197 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.197 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -820,13 +598,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.206
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.206
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.203 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.203 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -895,13 +669,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.217
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.217
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.215 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.215 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -969,13 +739,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.223
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.223
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.221 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.221 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1043,13 +809,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.230
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.230
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.227 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.228 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1117,13 +879,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.235
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.235
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.233 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.233 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1191,13 +949,10 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.721
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.721
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+> Start ÄÜ¼Ö [org.eclipse.ui.console 3.12.0.v20230317-0802]
+2023-10-10 13:39:10.719 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.719 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1265,13 +1020,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.733
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.733
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.732 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.732 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1339,13 +1090,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.740
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.740
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.737 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.737 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1412,13 +1159,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.745
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:10.745
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:10.744 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:10.744 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1485,13 +1228,18 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.204
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.204
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:12.895 - Open [https://dbeaver.io/product/version.xml]
+2023-10-10 13:39:35.096 - Delete empty SQL script '\mybatis\Scripts\mybatis.sql'
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.13.0.202306071707]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.14.0.202306071707]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.73.202309041200]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.73.202309041200]
+2023-10-10 13:39:35.181 - Connect with 'localhost' (oracle_thin-18b149cf68e-a4f4f856d0cd679)
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.6.202309041200]
+> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.198.202309041200]
+2023-10-10 13:39:35.201 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:35.202 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1549,13 +1297,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.210
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.210
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:35.207 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:35.208 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1613,13 +1357,12 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.628
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.628
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:35.215 - Execution context opened (localhost; Main; 0)
+2023-10-10 13:39:35.503 - Execution context opened (localhost; Metadata; 1)
+2023-10-10 13:39:35.586 - Connected (oracle_thin-18b149cf68e-a4f4f856d0cd679, Oracle JDBC driver [11.2.0.2.0])
+2023-10-10 13:39:35.626 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:35.626 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1677,13 +1420,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.633
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:35.633
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:35.632 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:35.632 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1741,13 +1480,9 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:37.021
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:37.021
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+2023-10-10 13:39:37.019 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:37.020 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1805,16 +1540,16 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:37.028
-!MESSAGE Error reading statistics of 'localhost'
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:37.028
-!MESSAGE Can't read tablespace statistics
-!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:37.028
-!MESSAGE ORA-00942: table or view does not exist
-
-!STACK 0
-java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+2023-10-10 13:39:37.027 - Error reading statistics of 'localhost'
+org.jkiss.dbeaver.DBException: Can't read tablespace statistics
+	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.collectObjectStatistics(OracleDataSource.java:861)
+	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:337)
+	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:1)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:88)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:72)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
 
 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
@@ -1830,19 +1565,10 @@ java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
 	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
 	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeQuery(JDBCStatementImpl.java:346)
 	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.collectObjectStatistics(OracleDataSource.java:842)
-	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:337)
-	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:1)
-	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:88)
-	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:72)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:37.039
-!MESSAGE Error opening project
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 13:39:37.039
-!MESSAGE C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
-!STACK 0
-java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€ì •ëœ ê²½ë¡œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤)
+	... 6 more
+2023-10-10 13:39:37.038 - Recovering project 'General' metadata C:\SpringBoot_dds\workspace\General\.project
+2023-10-10 13:39:37.038 - Error opening project
+java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ÁöÁ¤µÈ °æ·Î¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(Unknown Source)
 	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
@@ -1900,157 +1626,13 @@ java.io.FileNotFoundException: C:\SpringBoot_dds\workspace\General\.project (ì§€
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-!SESSION 2023-10-10 14:56:03.352 -----------------------------------------------
-eclipse.buildId=unknown
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -eclipse.keyring C:\Users\82109\AppData\Roaming\DBeaverData\secure\secure_storage
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY org.eclipse.ui 2 2 2023-10-10 14:56:07.832
-!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 15:09:02.114
-!MESSAGE SQL Error [904] [42000]: ORA-00904: : invalid identifier
-
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 15:09:02.114
-!MESSAGE ORA-00904: : invalid identifier
-
-!STACK 0
-java.sql.SQLSyntaxErrorException: ORA-00904: : invalid identifier
-
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
-	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:837)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
-	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:523)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:193)
-	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:999)
-	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1315)
-	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1890)
-	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1855)
-	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:304)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
-	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3940)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5142)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 15:09:16.257
-!MESSAGE SQL Error [942] [42000]: ORA-00942: table or view does not exist
-
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 15:09:16.257
-!MESSAGE ORA-00942: table or view does not exist
-
-!STACK 0
-java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
-
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
-	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:837)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
-	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:523)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:193)
-	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:999)
-	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1315)
-	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1890)
-	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1855)
-	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:304)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
-	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3940)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5142)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 15:09:26.600
-!MESSAGE SQL Error [942] [42000]: ORA-00942: table or view does not exist
-
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 15:09:26.600
-!MESSAGE ORA-00942: table or view does not exist
-
-!STACK 0
-java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
-
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
-	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:837)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
-	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:523)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:193)
-	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:999)
-	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1315)
-	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1890)
-	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1855)
-	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:304)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
-	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3940)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5142)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-10 17:23:43.511
-!MESSAGE SQL Error [911] [22019]: ORA-00911: invalid character
-
-!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-10 17:23:43.511
-!MESSAGE ORA-00911: invalid character
-
-!STACK 0
-java.sql.SQLSyntaxErrorException: ORA-00911: invalid character
-
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:440)
-	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
-	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:837)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:445)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:191)
-	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:523)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:193)
-	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:999)
-	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1315)
-	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1890)
-	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1855)
-	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:304)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
-	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3940)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5142)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-10-10 13:40:20.877 - Delete empty SQL script '\mybatis\Scripts\Script.sql'
+2023-10-10 13:40:24.340 - Execution context opened (localhost; SQLEditor <Script.sql>; 2)
+> Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.91.202309041200]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.100.202309041200]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.91.202309041200]
+> Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.8.202309041200]
+2023-10-10 13:44:10.876 - Execution context closed (localhost, 2)
+2023-10-10 13:44:11.035 - DBeaver is stopping
+2023-10-10 13:44:11.037 - Stop instance server
+2023-10-10 13:44:12.038 - DBeaver shutdown completed

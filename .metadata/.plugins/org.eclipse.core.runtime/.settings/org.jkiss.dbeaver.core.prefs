@@ -1,8 +1,10 @@
 driver.selector.orderBy=score
 eclipse.preferences.version=1
+org.jkiss.dbeaver.core.confirm.exit=always
+project.active=mybatis
 sample.database.canceled=true
 tipOfTheDayInitializer.notFirstRun=true
-ui.auto.update.check.time=1696857624755
+ui.auto.update.check.time=1696912752891
 ui.render.boolean.style.checked.align=CENTER
 ui.render.boolean.style.checked.color=default
 ui.render.boolean.style.checked.font=NORMAL
@@ -16,3 +18,4 @@ ui.render.boolean.style.unchecked.align=CENTER
 ui.render.boolean.style.unchecked.color=default
 ui.render.boolean.style.unchecked.font=NORMAL
 ui.render.boolean.style.unchecked.text=[\u2000]
+ui.show.tip.of.the.day.on.startup=true

@@ -1,26 +1,29 @@
 server:
   port: 10000
 
-  #JDBC Datasource
-
+#JDBC Datasource
+#일반 Oracle드라이버사용, 로깅과 관련된 설정x
 #JDBC datasource
-spring:
-  datasource:
-    hikari:
-      driver-class-name: oracle.jdbc.OracleDriver # 드라이버 경로
-      jdbc-url: jdbc:oracle:thin:@localhost:1521:XE
-      username: hr
-      password: hr
-
-#JDBC spy datasource
-#log4jdbc:
-#  superdelegator:
-#    name: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
-#
 #spring:
 #  datasource:
 #    hikari:
-#      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-#      jdbc-url: jdbc:log4jdbc:oracle:thin:@localhost:1521:XE
+#      driver-class-name: oracle.jdbc.OracleDriver # 드라이버 경로
+#      jdbc-url: jdbc:oracle:thin:@localhost:1521:XE
 #      username: hr
 #      password: hr
+
+#-------------------------------------------------------------------------
+
+#JDBC spy datasource
+#Log4jdbc의 DriverSpy를 사용해 JDBC스파이를 활성화 하고 JDBC동작을 로깅하고 모니터링 할 수 있다.
+log4jdbc:
+  superdelegator:
+    name: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+
+spring:
+  datasource:
+    hikari:
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      jdbc-url: jdbc:log4jdbc:oracle:thin:@localhost:1521:XE
+      username: hr
+      password: hr

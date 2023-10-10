@@ -3,6 +3,6 @@
 <mapper namespace="com.example.ex01.mapper.TimeMapper">
 <!--   자바쪽의 인터페이스의 경로를 써서 인터페이스와 다이렉트로 연동되도록 해줘야한다.(1대1매핑)-->
     <select id="getTime" resultType="string">
-        SELECT SYSDATE FROM DUAL
+        SELECT SYSDATE FROM DUAL /*현재 날짜와 시간*/
     </select>
 </mapper>
