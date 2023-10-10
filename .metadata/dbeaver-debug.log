@@ -155,3 +155,4 @@ Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not e
 	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.collectObjectStatistics(OracleDataSource.java:842)
 	... 6 more
 2023-10-09 22:55:46.378 - System suspend detected! Reinitialize all remote connections.
+2023-10-10 05:36:02.932 - System suspend detected! Reinitialize all remote connections.
