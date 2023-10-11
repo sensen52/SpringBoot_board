@@ -6,4 +6,21 @@
             (PRODUCT_ID, PRODUCT_NAME, PRODUCT_STOCK, PRODUCT_PRICE)
         VALUES(SEQ_PRODUCT.NEXTVAL, #{productName}, #{productStock}, #{productPrice})
     </insert>
+
+    <update id="update">
+        UPDATE TBL_PRODUCT
+        SET PRODUCT_NAME=#{productName},PRODUCT_STOCK=#{productStock},PRODUCT_PRICE=#{productPrice},UPDATE_DATE=SYSDATE
+        WHERE PRODUCT_ID=#{productId}
+    </update>
+
+    <delete id="delete">
+        DELETE
+        FROM TBL_PRODUCT
+        WHERE PRODUCT_ID=#{productId}
+    </delete>
+
+    <select id="selectAll" resultType="productVO">/*ali에 지정a*/
+    SELECT PRODUCT_ID, PRODUCT_NAME, PRODUCT_STOCK, PRODUCT_PRICE, REGISTER_DATE, UPDATE_DATE
+    FROM TBL_PRODUCT
+    </select>
 </mapper>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0/EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-   <!-- <typeAliases>
+    <typeAliases>
         <typeAlias type="com.example.ex01.domain.ProductVO" alias="productVO"/>
-    </typeAliases>-->
+    </typeAliases>
+<!--  Mapper.xml의 resultType의 경로를 저장-->
 </configuration>
