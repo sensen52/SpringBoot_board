@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>상품 추가</title>
+</head>
+<!--field : controller에서 빈 객체를 만들어 키값을 설정한 후 그 객체의 필드를 html에서 사용할 수 있게 만듬-->
+<body>
+    <form th:action="@{/product/register}" th:object="${productVO}" method="post">
+        <div>
+            <input type="text" th:field="*{productName}" placeholder="상품 이름">
+        </div>
+        <div>
+            <input type="text" th:field="*{productStock}" placeholder="상품 재고">
+        </div>
+        <div>
+            <input type="text" th:field="*{productPrice}" placeholder="상품 가격">
+        </div>
+        <input type="submit" value="등록">
+    </form>
+</body>
+</html>

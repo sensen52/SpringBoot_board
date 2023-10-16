@@ -1,5 +1,4 @@
 package com.example.ex02.controller;
-
 import com.example.ex02.domain.MemberVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -7,7 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -72,6 +70,7 @@ public class ExampleController {
     }
     //model전달자를 사용하지 않고 객체를 사용하면 객체의 앞글자를 소문자로 바꾼게 키 값이 된다
     //그래서 타임리프에서 ${memberVO.age} 이런식으로 키와 값으로 값을 추출할 수 있는것이다.
+
 
     @GetMapping("ex11")
     public void ex11(MemberVO memberVO, @ModelAttribute("gender") String gender){
