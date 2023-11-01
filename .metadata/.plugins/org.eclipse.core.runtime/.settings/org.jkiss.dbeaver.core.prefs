@@ -1,11 +1,11 @@
 driver.selector.orderBy=score
 eclipse.preferences.version=1
 org.jkiss.dbeaver.core.confirm.exit=always
-project.active=mybatis
+project.active=app
 resultset.presentation.active=spreadsheet
 sample.database.canceled=true
 tipOfTheDayInitializer.notFirstRun=true
-ui.auto.update.check.time=1697360330593
+ui.auto.update.check.time=1698762822931
 ui.render.boolean.style.checked.align=CENTER
 ui.render.boolean.style.checked.color=default
 ui.render.boolean.style.checked.font=NORMAL
