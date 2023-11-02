@@ -1,0 +1,81 @@
+2023-11-02 18:37:29.567 - DBeaver 23.2.0.202309041200 is starting
+2023-11-02 18:37:29.568 - OS: Windows 11 10.0 (amd64)
+2023-11-02 18:37:29.568 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2023-11-02 18:37:29.569 - Install path: 'C:\SpringBoot_dds\resource\dbeaver'
+2023-11-02 18:37:29.569 - Instance path: 'file:/C:/SpringBoot_dds/workspace/'
+2023-11-02 18:37:29.569 - Memory available 64Mb/1024Mb
+2023-11-02 18:37:29.595 - Create display
+2023-11-02 18:37:29.756 - Initializing DBeaver 23.2.0
+2023-11-02 18:37:29.757 - Host plugin: org.jkiss.dbeaver.ui.app.standalone 23.2.0.202309041200
+2023-11-02 18:37:29.758 - Initialize desktop platform...
+2023-11-02 18:37:29.951 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.10.0.v20230425-0513]
+> Start Core Resource Management [org.eclipse.core.resources 3.19.0.v20230510-1240]
+> Start 팀 지원 핵심 [org.eclipse.team.core 3.10.0.v20230317-0901]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.113.202309041200]
+2023-11-02 18:37:30.594 - Initialize base platform...
+2023-11-02 18:37:30.629 - Platform initialized (871ms)
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.113.202309041200]
+REQUEST: {"payload":1698917850856}
+2023-11-02 18:37:30.930 - Error accessing instance server: java.net.ConnectException
+2023-11-02 18:37:30.946 - Starting instance server at http://localhost:57090
+2023-11-02 18:37:30.993 - Run workbench
+> Start DBeaver UI [org.jkiss.dbeaver.ui 5.1.128.202309041200]
+> Start Eclipse e4 작업영역 SWT [org.eclipse.e4.ui.workbench.swt 0.17.0.v20230501-1823]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.0.v20230429-1914]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.0.v20230501-1823]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.0.v20230501-1823]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.0.v20230501-1823]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.0.v20230501-1823]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.18.0.v20230211-1150]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.0.v20230501-1533]
+> Start Eclipse e4 작업영역 기능 추가 [org.eclipse.e4.ui.workbench.addons.swt 1.5.0.v20230501-1823]
+> Start Eclipse e4 작업영역 SWT 렌더러 [org.eclipse.e4.ui.workbench.renderers.swt 0.16.0.v20230525-0648]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.0.v20230429-1914]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.0.v20230317-0802]
+Warning: NLS unused message: BlockedJobsDialog_UserInterfaceTreeElement in: org.eclipse.ui.internal.progress.messages
+2023-11-02 18:37:47.128 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.103.202309041200]
+2023-11-02 18:37:47.506 - Total database drivers: 106 (106)
+> Start 도움말 시스템 코어 [org.eclipse.help 3.10.0.v20230317-0802]
+2023-11-02 18:37:47.836 - Create actions
+2023-11-02 18:37:47.836 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2023-11-02 18:37:47.836 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2023-11-02 18:37:47.836 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2023-11-02 18:37:48.771 - Initialize workbench window
+2023-11-02 18:37:48.771 - Finish initialization
+> Start 기본 문서 편집기 [org.eclipse.ui.editors 3.16.0.v20230329-1609]
+> Start 텍스트 편집기 프레임워크 [org.eclipse.ui.workbench.texteditor 3.17.0.v20230316-1200]
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.113.202309041200]
+Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.113.202309041200]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.89.202309041200]
+> Start 핵심 비교 지원 [org.eclipse.compare.core 3.8.0.v20230517-1315]
+> Start jna [com.sun.jna 5.13.0]
+> Start 인터넷 연결 관리 사용자 인터페이스 [org.eclipse.ui.net 1.5.0.v20230317-0901]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.0.v20230317-0901]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.150.202309041200]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.119.202309041200]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.13.0.202306071707]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.14.0.202306071707]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.73.202309041200]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.73.202309041200]
+> Start 콘솔 [org.eclipse.ui.console 3.12.0.v20230317-0802]
+Warning: NLS unused message: InputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+Warning: NLS unused message: OutputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+> Start 디버그 핵심 [org.eclipse.debug.core 3.21.0.v20230508-1538]
+2023-11-02 18:37:52.890 - Connect with 'localhost' (oracle_thin-18b862e2f15-13a127826c35cbb)
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.6.202309041200]
+> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.198.202309041200]
+2023-11-02 18:37:52.927 - Execution context opened (localhost; Main; 0)
+2023-11-02 18:37:53.256 - Execution context opened (localhost; Metadata; 1)
+2023-11-02 18:37:53.354 - Connected (oracle_thin-18b862e2f15-13a127826c35cbb, Oracle JDBC driver [11.2.0.2.0])
+2023-11-02 18:37:53.436 - Execution context opened (localhost; SQLEditor <board.sql>; 2)
+> Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.91.202309041200]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.100.202309041200]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.91.202309041200]
+2023-11-02 18:37:55.087 - Open [https://dbeaver.io/product/version.xml]
+2023-11-02 19:13:20.003 - System suspend detected! Reinitialize all remote connections.
+2023-11-02 19:57:01.840 - System suspend detected! Reinitialize all remote connections.
+2023-11-02 20:03:56.485 - System suspend detected! Reinitialize all remote connections.
+> Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.8.202309041200]
