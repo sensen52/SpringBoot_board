@@ -24,6 +24,7 @@ public class BoardMapperTests {
         assertThat(boardMapper.select(3L).getBoardContent()).isEqualTo("수정된 내용");
     }
 
+    //size:갯수 몇개 있는지
     @Test
     public void selectAllTest(){
         assertThat(boardMapper.selectAll().size()).isEqualTo(3);
